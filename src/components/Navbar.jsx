@@ -35,7 +35,6 @@ export const Navbar = () => {
                 <div className={`hidden md:flex gap-8 text-sm font-medium transition-colors duration-500 ${scrolled ? 'text-stone-800' : 'text-stone-600'}`}>
                     <Link to="/" className="hover:text-[var(--color-primary)] transition-colors">Product</Link>
                     <Link to="/pricing" className="hover:text-[var(--color-primary)] transition-colors">Pricing</Link>
-                    <a href="#" className="hover:text-[var(--color-primary)] transition-colors">Resources</a>
                 </div>
 
                 <div className="flex gap-4 items-center">
