@@ -8,7 +8,7 @@ export default function Privacy() {
                 <p>Last updated: October 2024</p>
 
                 <h2 className="font-serif text-3xl text-[var(--color-dark-text)] mt-12 mb-4">1. Information We Collect</h2>
-                <p>To provide you with the core functionality of Quantract—simplifying dense procurement contracts—we collect minimal necessary data:</p>
+                <p>To provide you with the core functionality of Quantract - simplifying dense procurement contracts - we collect minimal necessary data:</p>
                 <ul className="list-disc pl-6 space-y-2 text-stone-700">
                     <li><strong>Account Information:</strong> Your name, email address, and billing information to provide access to the platform.</li>
                     <li><strong>Document Data:</strong> The MSAs, vendor agreements, and playbooks you deliberately upload to our platform for processing.</li>
