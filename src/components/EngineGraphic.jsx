@@ -97,7 +97,7 @@ export const EngineGraphic = () => {
             <motion.div
                 key={`doc-${currentData.id}`}
                 className="absolute top-1/2 -translate-y-1/2 z-20 flex flex-col items-center"
-                style={{ left: 'calc(50% - 250px)' }}
+                style={{ right: 'calc(50% + 140px)' }}
                 variants={docVariants}
                 initial="initial"
                 animate="animate"
@@ -122,8 +122,8 @@ export const EngineGraphic = () => {
                         transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                     />
                 </div>
-                <div className="mt-4 bg-[#3F3F3A] text-white text-base font-bold px-4 py-1.5 rounded-full whitespace-nowrap shadow-md flex items-center gap-2 tracking-wide uppercase">
-                    <FileSearch className="w-5 h-5" />
+                <div className="mt-4 bg-[#3F3F3A] text-white text-[13px] font-bold px-4 py-1.5 rounded-full whitespace-nowrap shadow-md flex items-center gap-2 tracking-wide uppercase">
+                    <FileSearch className="w-4 h-4" />
                     {currentData.docType}
                 </div>
             </motion.div>
@@ -175,13 +175,13 @@ export const EngineGraphic = () => {
                                     <kpi.icon className={`w-4 h-4 ${kpi.status === 'compliant' ? 'text-green-600' : 'text-amber-600'}`} />
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className="text-[15px] font-bold text-stone-400 uppercase tracking-wider mb-0.5">{kpi.label}</span>
-                                    <span className="text-xl font-bold text-stone-800 leading-tight">{kpi.value}</span>
+                                    <span className="text-xs font-bold text-stone-400 uppercase tracking-wider mb-0.5">{kpi.label}</span>
+                                    <span className="text-base font-bold text-stone-800 leading-tight">{kpi.value}</span>
                                 </div>
                             </div>
 
                             <div>
-                                <span className={`text-base px-3 py-1.5 rounded-lg font-bold uppercase tracking-wide ${kpi.status === 'compliant' ? 'bg-green-100 text-green-700' : 'bg-amber-100/80 text-amber-700'}`}>
+                                <span className={`text-[13px] px-3 py-1 rounded-lg font-bold uppercase tracking-wide ${kpi.status === 'compliant' ? 'bg-green-100 text-green-700' : 'bg-amber-100/80 text-amber-700'}`}>
                                     {kpi.status === 'compliant' ? 'Verified' : 'Flagged'}
                                 </span>
                             </div>
