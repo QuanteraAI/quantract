@@ -33,12 +33,12 @@ export default function Home() {
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {/* Bento Large Card */}
-                    <div className="lg:col-span-2 bg-gradient-to-br from-purple-50/50 to-white p-10 md:p-14 rounded-3xl border border-stone-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative overflow-hidden group">
-                        <div className="absolute -bottom-10 -right-10 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+                    <div className="lg:col-span-2 bg-white p-10 md:p-14 rounded-3xl border border-stone-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative overflow-hidden group">
+                        <div className="absolute -bottom-10 -right-10 opacity-5 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none">
                             <Zap className="w-80 h-80 text-[var(--color-primary)]" />
                         </div>
                         <div className="relative z-10 max-w-lg">
-                            <div className="w-16 h-16 bg-white rounded-2xl shadow-sm border border-stone-100 flex items-center justify-center mb-8 hidden md:flex">
+                            <div className="w-16 h-16 bg-stone-50 rounded-2xl shadow-sm border border-stone-100 flex items-center justify-center mb-8">
                                 <Zap className="w-8 h-8 text-[var(--color-primary)]" />
                             </div>
                             <h3 className="font-serif text-3xl md:text-4xl mb-4 text-[var(--color-dark-text)] tracking-tight">Simplified Terms</h3>
@@ -49,26 +49,32 @@ export default function Home() {
                     </div>
 
                     {/* Bento Small Card */}
-                    <div className="bg-stone-50 p-10 rounded-3xl border border-stone-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col justify-between hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all">
-                        <div className="w-14 h-14 bg-white rounded-xl shadow-sm border border-stone-100 flex items-center justify-center mb-6">
-                            <ShieldCheck className="w-7 h-7 text-[var(--color-primary)]" />
+                    <div className="bg-white p-10 md:p-14 rounded-3xl border border-stone-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative overflow-hidden group flex flex-col justify-between">
+                        <div className="absolute -bottom-10 -right-10 opacity-5 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none">
+                            <ShieldCheck className="w-64 h-64 text-[var(--color-primary)]" />
                         </div>
-                        <div>
-                            <h3 className="font-serif text-2xl md:text-3xl mb-3 text-[var(--color-dark-text)] tracking-tight">Custom Playbooks</h3>
-                            <p className="text-stone-600 leading-relaxed font-medium">
+                        <div className="relative z-10">
+                            <div className="w-16 h-16 bg-stone-50 rounded-2xl shadow-sm border border-stone-100 flex items-center justify-center mb-8">
+                                <ShieldCheck className="w-8 h-8 text-[var(--color-primary)]" />
+                            </div>
+                            <h3 className="font-serif text-3xl md:text-4xl mb-4 text-[var(--color-dark-text)] tracking-tight">Custom Playbooks</h3>
+                            <p className="text-stone-600 text-lg md:text-xl leading-relaxed font-medium">
                                 Define standard KPIs. Quantract cross-checks documents to flag non-compliant terms.
                             </p>
                         </div>
                     </div>
 
                     {/* Bento Full-Width Card */}
-                    <div className="lg:col-span-3 bg-white p-10 md:p-14 rounded-3xl border border-stone-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all flex flex-col md:flex-row items-center justify-between gap-10">
-                        <div className="max-w-2xl">
-                            <div className="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center mb-6">
-                                <MessageSquare className="w-7 h-7 text-[var(--color-primary)]" />
+                    <div className="lg:col-span-3 bg-white p-10 md:p-14 rounded-3xl border border-stone-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative overflow-hidden group flex flex-col md:flex-row items-center justify-between gap-10">
+                        <div className="absolute -top-16 right-10 opacity-5 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none">
+                            <MessageSquare className="w-80 h-80 text-[var(--color-primary)]" />
+                        </div>
+                        <div className="relative z-10 max-w-2xl">
+                            <div className="w-16 h-16 bg-stone-50 rounded-2xl shadow-sm border border-stone-100 flex items-center justify-center mb-8">
+                                <MessageSquare className="w-8 h-8 text-[var(--color-primary)]" />
                             </div>
                             <h3 className="font-serif text-3xl md:text-4xl mb-4 text-[var(--color-dark-text)] tracking-tight">Chat with your contract</h3>
-                            <p className="text-stone-600 text-lg leading-relaxed font-medium">
+                            <p className="text-stone-600 text-lg md:text-xl leading-relaxed font-medium">
                                 Got a specific question about IP indemnification? Ask directly. The highly-tuned LLM points you to the exact page and clause instantly, with 100% sourced citations.
                             </p>
                         </div>
