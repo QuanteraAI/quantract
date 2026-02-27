@@ -8,10 +8,10 @@ export default function Home() {
             {/* Hero Section */}
             <section className="mx-auto max-w-5xl px-6 pt-36 pb-12 text-center">
                 <h1 className="font-serif text-[68px] md:text-[88px] font-normal leading-[1.02] tracking-tight text-[var(--color-dark-text)] mx-auto max-w-[900px] text-balance">
-                    Stop losing hours to dense procurement contracts.
+                    Stop losing hours to dense legal & procurement contracts.
                 </h1>
                 <p className="mt-8 text-[20px] md:text-[22px] text-stone-600 font-normal max-w-3xl mx-auto leading-[1.45]">
-                    Upload 80-page vendor agreements and MSAs. Instantly extract your key terms, verify compliance with your playbook, and speed up procurement approvals.
+                    Upload 80-page vendor agreements and MSAs. Instantly extract key terms, verify compliance with your playbook, and speed up legal and procurement approvals.
                 </p>
                 <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
                     <button className="bg-[var(--color-primary)] text-white text-base font-medium px-6 py-3 rounded shadow-[0px_-2px_0px_0px_rgba(255,255,255,0.25)_inset] hover:bg-[var(--color-primary-dark)] transition-all flex items-center justify-center gap-2">
@@ -29,7 +29,7 @@ export default function Home() {
             {/* Feature Grid / USPs */}
             <section className="mx-auto max-w-6xl px-6 py-24">
                 <div className="text-center mb-16">
-                    <h2 className="font-serif text-4xl md:text-5xl text-[var(--color-dark-text)] tracking-tight">The ultimate procurement operating system.</h2>
+                    <h2 className="font-serif text-4xl md:text-5xl text-[var(--color-dark-text)] tracking-tight">The ultimate contract operating system for legal & procurement.</h2>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {/* Bento Large Card */}
@@ -43,7 +43,7 @@ export default function Home() {
                             </div>
                             <h3 className="font-serif text-3xl md:text-4xl mb-4 text-[var(--color-dark-text)] tracking-tight">Simplified Terms</h3>
                             <p className="text-stone-600 text-lg md:text-xl leading-relaxed font-medium">
-                                Strip away the legalese. Instantly review simplified vendor terms, procurement clauses, and obligations without manual reading.
+                                Strip away the legalese. Instantly review simplified vendor terms, legal obligations, and procurement clauses without manual reading.
                             </p>
                         </div>
                     </div>
